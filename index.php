@@ -3,143 +3,117 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MASMEDIA | Login 3D</title>
+<title>MASMEDIA | Login</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
-    <!-- Background -->
-    <div class="background"></div>
+<div class="background"></div>
 
-    <!-- Overlay -->
-    <div class="overlay"></div>
+<div class="overlay"></div>
 
-    <!-- Scene -->
-    <div class="scene">
+<div class="scene">
 
-        <!-- BOOK -->
-        <div class="book" id="book">
+<div class="book">
 
-            <!-- Back Cover -->
-            <div class="back-cover"></div>
+<!-- COVER -->
 
-            <!-- Pages -->
-            <div class="pages">
+<div class="cover" id="cover">
 
-                <div class="page"></div>
-                <div class="page"></div>
-                <div class="page"></div>
-                <div class="page"></div>
-                <div class="page"></div>
+<div class="cover-front">
 
-            </div>
+<div class="logo">
 
-            <!-- Inside -->
-            <div class="inside">
+<img src="assets/img/logo.png">
 
-                <!-- LEFT -->
-                <div class="left-page">
+<h1>MASMEDIA</h1>
 
-                    <img src="assets/img/logo.png" class="logo">
+<p>DOCUMENT REPOSITORY</p>
 
-                    <h1>MASMEDIA</h1>
+<span>Klik Buku Untuk Membuka</span>
 
-                    <p>
-                        Document Repository System
-                    </p>
+</div>
 
-                    <span>
-                        Knowledge Is Power
-                    </span>
+</div>
 
-                </div>
+</div>
 
-                <!-- RIGHT -->
-                <div class="right-page">
+<!-- INSIDE -->
 
-                    <form class="login-form">
+<div class="inside">
 
-                        <h2>LOGIN</h2>
+<div class="left-page">
 
-                        <div class="input-group">
+<h2>Selamat Datang</h2>
 
-                            <i class="fa-solid fa-envelope"></i>
+<p>
 
-                            <input
-                                type="email"
-                                placeholder="Email">
+Document Repository PT Masmedia Buana Pustaka
 
-                        </div>
+</p>
 
-                        <div class="input-group">
+</div>
 
-                            <i class="fa-solid fa-lock"></i>
+<div class="right-page">
 
-                            <input
-                                type="password"
-                                placeholder="Password">
+<h2>LOGIN</h2>
 
-                        </div>
+<form>
 
-                        <button type="submit">
+<div class="input-box">
 
-                            <i class="fa-solid fa-right-to-bracket"></i>
+<i class="fa fa-envelope"></i>
 
-                            LOGIN
+<input
+type="email"
+placeholder="Email">
 
-                        </button>
+</div>
 
-                    </form>
+<div class="input-box">
 
-                </div>
+<i class="fa fa-lock"></i>
 
-            </div>
+<input
+type="password"
+placeholder="Password">
 
-            <!-- FRONT COVER -->
-            <div class="front-cover">
+</div>
 
-                <div class="shine"></div>
+<button>
 
-                <div class="cover-content">
+<i class="fa fa-right-to-bracket"></i>
 
-                    <img src="assets/img/logo.png">
+LOGIN
 
-                    <h1>MASMEDIA</h1>
+</button>
 
-                    <h3>DOCUMENT REPOSITORY</h3>
+</form>
 
-                    <p>
-                        Klik Buku Untuk Membuka
-                    </p>
+</div>
 
-                </div>
+</div>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-
-    <!-- JS -->
-    <script src="assets/js/book.js"></script>
+<script src="assets/js/book.js"></script>
 
 </body>
-
 </html>

@@ -1,0 +1,344 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    background:#02173f;
+}
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+.background{
+    position:fixed;
+    inset:0;
+    background:url("../img/library.jpg") center center/cover;
+    filter:blur(5px);
+    transform:scale(1.08);
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(2,20,60,.70);
+}
+
+/* ===========================
+   SCENE
+=========================== */
+
+.scene{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    perspective:2600px;
+
+}
+
+/* ===========================
+   BOOK
+=========================== */
+
+.book{
+
+    position:relative;
+
+    width:980px;
+    height:620px;
+
+    transform-style:preserve-3d;
+
+}
+
+/* ===========================
+   COVER
+=========================== */
+
+.cover{
+
+    position:absolute;
+    inset:0;
+
+    border-radius:12px;
+
+    transform-origin:left center;
+    transform-style:preserve-3d;
+
+    background:
+    linear-gradient(
+    145deg,
+    #0b6ee8,
+    #084ca6,
+    #062f72);
+
+    box-shadow:
+
+    0 45px 80px rgba(0,0,0,.45),
+
+    inset 0 0 30px rgba(255,255,255,.08);
+
+    z-index:100;
+
+    cursor:pointer;
+
+}
+
+/* garis emas */
+
+.cover::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:14px;
+
+    border:2px solid rgba(255,215,0,.45);
+
+    border-radius:8px;
+
+}
+
+/* punggung buku */
+
+.cover::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-24px;
+
+    width:24px;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+    to right,
+
+    #031b43,
+
+    #0b59c4,
+
+    #031b43
+
+    );
+
+    transform:rotateY(90deg);
+
+    transform-origin:right;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.cover-front{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.logo{
+
+    text-align:center;
+    color:white;
+
+}
+
+.logo img{
+
+    width:180px;
+    margin-bottom:25px;
+
+}
+
+.logo h1{
+
+    font-size:50px;
+    letter-spacing:3px;
+
+}
+
+.logo p{
+
+    margin-top:10px;
+    font-size:22px;
+
+}
+
+.logo span{
+
+    display:inline-block;
+
+    margin-top:60px;
+
+    color:#ffd54d;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   HALAMAN
+=========================== */
+
+.inside{
+
+    position:absolute;
+
+    inset:12px;
+
+    display:flex;
+
+    background:#faf5ea;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+}
+
+/* kiri */
+
+.left-page{
+
+    width:50%;
+
+    background:#f8f2e5;
+
+    border-right:1px solid #ddd;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:60px;
+
+}
+
+/* kanan */
+
+.right-page{
+
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.right-page form{
+
+    width:340px;
+
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.right-page h2{
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+    font-size:38px;
+
+}
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    left:18px;
+    top:17px;
+
+    color:#666;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:16px 18px 16px 50px;
+
+    border-radius:12px;
+
+    border:1px solid #d8d8d8;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#0b63d4;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#084ca5;
+
+}
